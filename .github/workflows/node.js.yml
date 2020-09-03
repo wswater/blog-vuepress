@@ -24,7 +24,8 @@ jobs:
         LEANCLOUD_APP_KEY: ${{ secrets.LEANCLOUD_APP_KEY }} # 评论系统的KEY
 
     - name: List output files
-      run: ls -a docs/.vuepress/dist # 显示生成的目录文件
+      #run: ls -a docs/.vuepress/dist # 显示生成的目录文件
+      run: ls -a public
       
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@3.0.0
